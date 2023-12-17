@@ -41,6 +41,10 @@
 
 .plist {
     margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+     text-overflow: clip;
 }
 
 .h2list {

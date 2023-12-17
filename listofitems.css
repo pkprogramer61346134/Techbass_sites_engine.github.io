@@ -35,6 +35,11 @@ height: auto;
 
 }
 
+.lilist:hover{
+
+   z-index: 100;
+    
+}
 .imglist {
 
    width: 150;

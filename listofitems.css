@@ -1,24 +1,35 @@
+.support{
+
+ position: relative;
+
+height: auto;
+ margin-top: 20px;
+
+
+}
 .ITList {
     position: relative;
     list-style-type: none;
     display: flex;
-    margin-top: 50px;
-    padding: 50px;
+    
+    justify-content: center;
     height: auto;
-  
+   
     overflow: hidden;
     scroll-behavior: smooth;
     
-
+ 
 
 }
 
 .lilist {
+ 
 
     position: relative;
     box-sizing: border-box;
     text-align: center;
-    width: 300px;
+    width: 200px;
+   
     height: 80%;
     margin: 30px 10px;
 
@@ -26,8 +37,8 @@
 
 .imglist {
 
-    width: 200px;
-    height: 200px;
+   width: 150;
+    height: 150px;
     object-fit: contain;
     object-position: center;
     border-radius: 10px;
@@ -36,12 +47,12 @@
 }
 
 .h1list {
-    font-size: 1.5em;
+  
     margin-bottom: 10px;
 }
 
 .plist {
-    margin-bottom: 10px;
+   
     display: -webkit-box;
     -webkit-line-clamp: 2; /* Limit to two lines */
     -webkit-box-orient: vertical;
@@ -49,7 +60,7 @@
 }
 
 .h2list {
-    font-size: 1.2em;
+   
     color: #666;
 }
 

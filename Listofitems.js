@@ -15,7 +15,7 @@ async function ItemslistCR(ITlist,ISlist)
      }
     
    for (let r = 0; r < Categorylist.length; r++) {
-      var listdiv  =  await elementCreator("div"+r, "div", 1, true, "slider0","ITList");
+      var listdiv  =  await elementCreator("div"+r, "div", 1, true, "slider0","support");
       var newlist =  await elementCreator(Categorylist[r], "ul", 1, false, "div"+r,"ITList");
       var liftbutton = await elementCreator("liftbutton", "button", 1, false, "div"+r,"liftbutton");
       var rightbutton = await elementCreator("rightbutton", "button", 1, false, "div"+r,"rightbutton");

@@ -3,6 +3,7 @@
     list-style-type: none;
     display: flex;
     margin-top: 50px;
+    padding: auto;
     height: auto;
   
     overflow: hidden;
@@ -42,9 +43,9 @@
 .plist {
     margin-bottom: 10px;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Number of lines to show */
+    -webkit-line-clamp: 2; /* Limit to two lines */
     -webkit-box-orient: vertical;
-     text-overflow: clip;
+    overflow: hidden;
 }
 
 .h2list {

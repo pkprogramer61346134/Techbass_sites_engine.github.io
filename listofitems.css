@@ -12,7 +12,7 @@ height: auto;
     list-style-type: none;
     display: flex;
     
-    justify-content: center;
+    transition: transform 0.5s ease-in-out;
     height: auto;
    
     overflow: hidden;
@@ -49,6 +49,7 @@ height: auto;
 .h1list {
   
     margin-bottom: 10px;
+    font-size: 14px; 
 }
 
 .plist {
@@ -57,11 +58,13 @@ height: auto;
     -webkit-line-clamp: 2; /* Limit to two lines */
     -webkit-box-orient: vertical;
     overflow: hidden;
+    font-size: 14px; 
 }
 
 .h2list {
    
     color: #666;
+    font-size: 14px; 
 }
 
 

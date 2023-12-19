@@ -37,7 +37,7 @@ async function ItemslistCR(ITlist,ISlist)
          
              if(Categorylist[r] == element.category)
              {
-                      console.log(element);
+                      
                        
                        
                          var newli =  await elementCreator(element.Items_id, "li", 1, false, Categorylist[r],"lilist");

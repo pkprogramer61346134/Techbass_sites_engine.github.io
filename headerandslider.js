@@ -47,6 +47,13 @@ function definer(hendal) {
     if (hendal == 'Local') {
         var Sign_in = document.getElementById("Sign_in");
         Sign_in.innerText = "Sign in";
+        Sign_in.onclick = function(event) {
+          
+          
+            window.location.href = "SIgninpage.html";
+            
+        };
+
         var Login = document.getElementById("Login");
         Login.innerText = "Login"
 

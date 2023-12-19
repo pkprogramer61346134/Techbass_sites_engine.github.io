@@ -17,24 +17,6 @@ objtr = [{
       "Item_Quntity": 10,
       "Item_Price": 250,
   
-    }, {
-      "Item_ID": 122354,
-      "Item_Name": "mouse",
-      "Item_Quntity": 10,
-      "Item_Price": 250,
-  
-    }, {
-      "Item_ID": 122354,
-      "Item_Name": "mouse",
-      "Item_Quntity": 10,
-      "Item_Price": 250,
-  
-    }, {
-      "Item_ID": 122354,
-      "Item_Name": "mouse",
-      "Item_Quntity": 10,
-      "Item_Price": 250,
-  
     }],
   
     //for order cancel

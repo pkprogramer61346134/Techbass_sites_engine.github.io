@@ -15,6 +15,8 @@
     transition: transform 0.5s ease-in-out;
     height: auto;
    
+ 
+ 
     overflow: hidden;
     scroll-behavior: smooth;
     
@@ -33,7 +35,8 @@
     box-sizing: border-box;
     text-align: center;
     width: 200px;
-   
+    box-shadow: 0 0 5px;
+    border-radius: 11px;
     height: 80%;
     margin: 30px 10px;
 
@@ -46,11 +49,12 @@
 }
 .imglist {
 
-   width: 150;
+   width: 150px;
     height: 150px;
     object-fit: contain;
     object-position: center;
     border-radius: 10px;
+    
 
 
 }

@@ -1,33 +1,68 @@
-var url  = "https://script.google.com/macros/s/AKfycbyPrfYeZModMptOAs2q-fzrbXEabO8pmbY1rdKL2z0DJ0orXIqtVBnJepmrg2rzAt9K/exec";
+var url = "https://script.google.com/macros/s/AKfycbyPrfYeZModMptOAs2q-fzrbXEabO8pmbY1rdKL2z0DJ0orXIqtVBnJepmrg2rzAt9K/exec";
 
-objtr = [{
+obj = [{
 
-    "Cammands": "LIN",
-    "Profile_Photo": "",
-    "Name": "Neelesh kushwaha",
-    "Address": "petrol the samne",
-    "Mobile_No": 856958658,
-    "Whatsapp_No": 68531546,
-    "gmail": "pavanroheria2@gmail.com",
-    "password": "ridhima6134",
-    "OTP": 966256,
-    "order": [{
-      "Item_ID": 122354,
-      "Item_Name": "mouse",
-      "Item_Quntity": 10,
-      "Item_Price": 250,
-  
-    }],
-  
-    //for order cancel
-    "OrderCancel": 44842778,
-    "OrderCancelresone": "its not good for used",
-  
-    //for Sreaching History save
-    "Item_ID": 122354,
-  
-  
-  }]
+
+}]
+
+function OrderCancel(OrderCancel, OrderCancelresone) {
+    var OrderCancel = {
+
+        "OrderCancel": OrderCancelresone,
+        "OrderCancelresone": OrderCancelresone,
+
+    }
+    obj.push(order);
+
+}
+
+function screacingitesm(Item_ID) {
+    var shreachingitems = {
+        "Item_ID": Item_ID
+
+    }
+
+    obj.push(shreachingitems);
+}
+
+
+function CUstomerdetalis(Cammands, Profile_Photo, Name, Address, Mobile_No, Whatsapp_No, gmail, password, OTP) {
+    var detaisl = {
+
+        "Cammands": Cammands,
+        "Profile_Photo": Profile_Photo,
+        "Name": Name,
+        "Address": Address,
+        "Mobile_No": Mobile_No,
+        "Whatsapp_No": Whatsapp_No,
+        "gmail": gmail,
+        "password": password,
+        "OTP": OTP,
+    }
+
+    obj.push(detaisl);
+
+}
+
+function order(Item_ID, Item_Name, Item_Quntity, Item_Price) {
+    var order = {
+
+
+        "Item_ID": Item_ID,
+        "Item_Name": Item_Name,
+        "Item_Quntity": Item_Quntity,
+        "Item_Price": Item_Price,
+
+
+
+    }
+
+
+    obj.push(order);
+
+
+
+}
 
 
 

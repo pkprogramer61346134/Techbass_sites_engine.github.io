@@ -24,20 +24,29 @@ async function singinpage() {
         }
         OTPSender.innerText = "Wait."
         OTPSender.disabled = true;
-        setTimeout(() => {
-
+    
+    
+     
+        for (var i = 50; i >= 1; i--) {
+           
+            (function (count) {
+                setTimeout(function () {
+                    OTPSender.innerText = count;
+                    OTPSender.style.pointerEvents = 'none';
+                   if(count <= 1)
+                   {
+                    
+                    OTPSender.innerText = "Get OTP";
+                    OTPSender.style.pointerEvents = 'auto';
+                   }
+                }, (30 - count) * 1000); 
+               
+                OTPSender.innerText = "Get OTP";
+            })(i);
           
-        }, 3000);
-
-
-        setTimeout(() => {
-
-            OTPSender.innerText = "Get OTP";
-
-
-        }, 3000);
-
-        OTPSender.innerText = "Wait."
+        }
+        
+       
 
     });
     OTP.placeholder = "Enter your OTP";

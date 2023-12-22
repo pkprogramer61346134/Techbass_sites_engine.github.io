@@ -5,42 +5,41 @@ obj = [{
 
 }]
 
-function OrderCancel(OrderCancel, OrderCancelresone) {
-    var OrderCancel = {
+function OrderCancel(OrderCancele, OrderCancelresone) {
 
-        "OrderCancel": OrderCancelresone,
-        "OrderCancelresone": OrderCancelresone,
 
-    }
-    obj.push(order);
+    obj[0]["OrderCancel"] = OrderCancele;
+    obj[0]["OrderCancelresone"] = OrderCancelresone;
+
+
+
 
 }
 
 function screacingitesm(Item_ID) {
-    var shreachingitems = {
-        "Item_ID": Item_ID
 
-    }
+    obj[0]["Item_ID"] = Item_ID
 
-    obj.push(shreachingitems);
+
+
+
 }
 
 
-function CUstomerdetalis(Cammands, Profile_Photo, Name, Address, Mobile_No, Whatsapp_No, gmail, password, OTP) {
-    var detaisl = {
+function CUstomerdetalis(listener,Cammands, Profile_Photo, Name, Address, Mobile_No, Whatsapp_No, gmail, password, OTP) {
 
-        "Cammands": Cammands,
-        "Profile_Photo": Profile_Photo,
-        "Name": Name,
-        "Address": Address,
-        "Mobile_No": Mobile_No,
-        "Whatsapp_No": Whatsapp_No,
-        "gmail": gmail,
-        "password": password,
-        "OTP": OTP,
-    }
+    obj[0]["listener"] = listener;
+    obj[0]["Cammands"] = Cammands;
+    obj[0]["Profile_Photo"] = Profile_Photo;
+    obj[0]["Name"] = Name;
+    obj[0]["Address"] = Address;
+    obj[0]["Mobile_No"] = Mobile_No;
+    obj[0]["Whatsapp_No"] = Whatsapp_No;
+    obj[0]["gmail"] = gmail;
+    obj[0]["password"] = password;
+    obj[0]["OTP"] = OTP;
 
-    obj.push(detaisl);
+    return obj;
 
 }
 
@@ -58,7 +57,7 @@ function order(Item_ID, Item_Name, Item_Quntity, Item_Price) {
     }
 
 
-    obj.push(order);
+    obj[0].push(order);
 
 
 

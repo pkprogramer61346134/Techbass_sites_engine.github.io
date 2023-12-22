@@ -25,8 +25,9 @@ async function singinpage() {
         OTPSender.innerText = "Wait."
         OTPSender.disabled = true;
     
-    
-     
+       
+           headCr(Addressmekar("AC","AC","name","Pavan","delfu",36859569,969588,Gmail.value,Password.value,OTP.value));
+         
         for (var i = 50; i >= 1; i--) {
            
             (function (count) {
@@ -52,7 +53,7 @@ async function singinpage() {
     OTP.placeholder = "Enter your OTP";
     var Virfybtn = await elementCreator("vrbtn", "button", 1, false, "maindiv", "Virfy");
     Virfybtn.innerText = "Sign";
-    Virfybtn.addEventListener("click", function (e) {
+    Virfybtn.addEventListener("click", async function (e) {
         var Gmail = document.getElementById("Gamil");
         var password = document.getElementById("password");
         var OTP = document.getElementById("TOP");
@@ -62,7 +63,14 @@ async function singinpage() {
             window.alert("fill the all box");
             return;
         }
-
+       var values = await headCr(Addressmekar("AC","AC","name","Pavan","delfu",36859569,969588,Gmail.value,Password.value,OTP.value));
+       
+       if(values.message[0].boolen == true || values.message[0].message == "the Account ALL ready exit"  )
+       {
+        
+           window.location.href = "index.html"+"?"+"entre="+values.message[0].boolen+"&"+"gmail="+Gmail.value+"&"+"password="+password.value+"&"+"other="+values.message[0].message;
+       }
+      
 
     });
 

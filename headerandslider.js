@@ -1,5 +1,5 @@
 
-async function controller(hendal) {
+async function controller(datawa) {
 
 
     await elementCreator("header", "header", 1, true);
@@ -12,26 +12,29 @@ async function controller(hendal) {
     await elementCreator("Screachbox", "input", 1, false, "header", "Screachbox");
     await elementCreator("Cartimag", "img", 1, false, "header", "cartimag");
     await elementCreator("slider", "div", 1, true, "header", "slaider");
-    if (hendal == 'Local') {
+    if ( datawa.listener == 'Local') {
         await elementCreator("Sign_in", "button", 1, false, "slider", "sign_in");
         await elementCreator("Login", "button", 1, false, "slider", "login");
 
     }
 
-    if (hendal == "sign_in") {
-        await elementCreator("ProfileIMG", "img", 1, false, "slider");
-        await elementCreator("Name", "a", 1, false, "slider");
+    if ( datawa.listener == "sign_in") {
+       var Userimages =  await elementCreator("ProfileIMG", "img", 1, false, "slider");
+        Userimages.src = datawa.message[0].message.detalis[0].Profile_Photo ||  "download.jpg" ;
+        console.log(datawa.message[0].message.detalis[0]);
+       var  Username  =  await elementCreator("Name", "a", 1, false, "slider");
+       Username.innerText = datawa.message[0].message.detalis[0].Name || "User Name";
         await elementCreator("hr", "hr", 1, false, "slider");
         await elementCreator("YourCard", "a", 1, false, "slider");
         await elementCreator("Order", "a", 1, false, "slider");
         await elementCreator("Category", "a", 1, false, "slider");
     }
-    await definer(hendal);
+    await definer(datawa);
     await sliderfuntions();
 
 }
 
-function definer(hendal) {
+function definer(datawa) {
 
 
     var Screachbox = document.getElementById('Screachbox');
@@ -44,7 +47,7 @@ function definer(hendal) {
     var threeline = document.getElementById('threeline');
     threeline.setAttribute("for", "checkbox");
 
-    if (hendal == 'Local') {
+    if ( datawa.listener == 'Local') {
         var Sign_in = document.getElementById("Sign_in");
         Sign_in.innerText = "Sign in";
         Sign_in.onclick = function(event) {
@@ -59,11 +62,9 @@ function definer(hendal) {
 
     }
 
-    if (hendal == "sign_in") {
-        var ProfileIMG = document.getElementById('ProfileIMG');
-        ProfileIMG.src = "download.jpg"
-        var Name = document.getElementById('Name');
-        Name.innerText = "pavan kushwah";
+    if ( datawa.listener == "sign_in") {
+       
+      
         var YourCard = document.getElementById('YourCard');
         YourCard.innerText = "Your Card"
         var Order = document.getElementById('Order');

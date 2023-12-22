@@ -129,7 +129,7 @@ header {
     display: none;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    height: 99%;
    
 
   animation: rename 2s ease-in forwards;
@@ -179,7 +179,7 @@ header {
 
 .slaider img {
   object-position: center;
-  object-fit: fill;
+  object-fit: contain;
   height: 100px;
   width: 100px;
   margin: 50px;
@@ -201,7 +201,7 @@ header {
 
 .slaider a {
 
-
+ cursor: pointer;
   margin: 5px;
   font-weight: bold;
   color: #0f3a5a;

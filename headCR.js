@@ -9,7 +9,7 @@ function Addressmekar(listener, Cammands, Profile_Photo, Name, Address, Mobile_N
 
     }
 
-    if (listener == "ACT") {
+    if (listener == "AC") {
         var objes =   CUstomerdetalis(listener, Cammands, Profile_Photo, Name, Address, Mobile_No, Whatsapp_No, gmail, password, OTP);
         return objes;
     }
@@ -19,21 +19,53 @@ function Addressmekar(listener, Cammands, Profile_Photo, Name, Address, Mobile_N
 }
 async function headCr(data) {
 
-    console.log(data[0].listener )
-    if (data[0].listener == "Local") {
+    
 
-        document.body.attributes.length = 0;
+    const params = new URLSearchParams(window.location.search);
+    var truefalsevalue = await params.get("entre");
+    var gmail = await params.get("gmail");
+    var password = await params.get("password");
+    var othervaluecheck = await params.get("other");
+    console.log(truefalsevalue);
+    if(truefalsevalue === "false" || othervaluecheck == "Account Create Success")
+    {
+       
+       var getdata =  await Addressmekar("AC", "LIN", "Profile_Photo", "Name", "Address", "Mobile_No", "Whatsapp_No", gmail, password, "OTP"); 
+       var datawa = await get_and_set_value(getdata);
+        datawa["listener"] = "sign_in";
+        await controller(datawa);
+        await ItemslistCR(datawa, "ISlist");
+       
+        
+    }else{
+
+    
+
+    if (data.listener == "Local") {
+
+      document.body.attributes.length = 0;
       
-        var datawa = await get_and_set_value(obj);
-        await controller("Local");
-        console.log(datawa);
+        var datawa = await get_and_set_value(data);
+        await controller(data);
+        console.log(data);
         await ItemslistCR(datawa, "ISlist");
 
 
     }
+    if (data.listener == "AC") {
 
+        document.body.attributes.length = 0;
+      
+        var datawa = await get_and_set_value(data);
+       
+       return datawa;
+      
+
+
+    }
+
+    }
 
 
 }
-
 headCr(Addressmekar("Local","LIN","name","Pavan","delfu",36859569,969588,"pavanrohmail.com","pavan3",96856));

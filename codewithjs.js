@@ -1,4 +1,4 @@
-var url = "https://script.google.com/macros/s/AKfycbyPrfYeZModMptOAs2q-fzrbXEabO8pmbY1rdKL2z0DJ0orXIqtVBnJepmrg2rzAt9K/exec";
+var url = "https://script.google.com/macros/s/AKfycbxYIS9r2RjAVOzg8iX7blJWDIRTV48rmEOZ3Ad5PEpofLLFe-JxBlpD_1orV_ZdBJ-h/exec";
 
 obj = [{
 
@@ -28,7 +28,7 @@ function screacingitesm(Item_ID) {
 
 function CUstomerdetalis(listener,Cammands, Profile_Photo, Name, Address, Mobile_No, Whatsapp_No, gmail, password, OTP) {
 
-    obj[0]["listener"] = listener;
+    obj["listener"] = listener;
     obj[0]["Cammands"] = Cammands;
     obj[0]["Profile_Photo"] = Profile_Photo;
     obj[0]["Name"] = Name;

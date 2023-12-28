@@ -80,7 +80,7 @@ async function headCr(data) {
     if(data.listener == "itemselected")
     {
 
-        
+        data.listener = "Local";
         await controller(data);
         console.log(data);
         var datawa = await get_and_set_value(data);

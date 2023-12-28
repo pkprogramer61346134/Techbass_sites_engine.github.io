@@ -1,4 +1,4 @@
-var url = "https://script.google.com/macros/s/AKfycbwq446_wKNl_UWxmp-_uG9Dx4ftgrPl73FlmDwjZ9XI-J3XPAYg3LohPWp4wHf9qkU_/exec";
+var url = "https://script.google.com/macros/s/AKfycbyv9GoLDAgVTVKBWStE3ESCJVhWRdVFC0amL28SmHw-w75fj3dIC-VnXMbQMLmDwc3T/exec";
 
 obj = [{
 
@@ -16,10 +16,12 @@ function OrderCancel(OrderCancele, OrderCancelresone) {
 
 }
 
-function screacingitesm(Item_ID) {
+function screacingitesm( listener,Cammands,Item_ID) {
 
+    obj[0]["Cammands"] = Cammands;
     obj[0]["Item_ID"] = Item_ID
-
+    obj["listener"] = listener;
+     return obj;
 
 
 
@@ -77,7 +79,7 @@ async function get_and_set_value(objs) {
         }
 
         const data = await response.json(); // Parse JSON data
-        console.log(data);
+      
         return data; // Return the parsed data
     } catch (error) {
         console.error('Error:', error);

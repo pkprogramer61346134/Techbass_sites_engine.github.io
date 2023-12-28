@@ -1,0 +1,48 @@
+.detailboxcs{
+ 
+    position: relative;
+  
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+  
+ 
+}
+
+.detailboxcs {
+    max-width: 800px; /* Adjust max-width based on your design preferences */
+    margin: 0 auto; /* Center the box horizontally */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in the box model */
+    background-color: #fff; /* Set a background color for better readability */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.detailboxcs img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Enhance image shadow */
+}
+
+.detailboxcs h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.detailboxcs p {
+    white-space: pre-line;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 20px; /* Add space between paragraphs */
+    color: #333; /* Set text color */
+}
+
+/* Optional: Style the last line without a border */
+.detailboxcs p:last-child {
+    border-bottom: none;
+}

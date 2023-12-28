@@ -14,6 +14,15 @@ function Addressmekar(listener, Cammands, Profile_Photo, Name, Address, Mobile_N
         return objes;
     }
 
+    if(listener == "itemselected")
+    {
+
+        var objs  = screacingitesm(listener,Cammands,Profile_Photo);
+      
+        return objs;
+
+    }
+
 
 
 }
@@ -64,8 +73,22 @@ async function headCr(data) {
 
     }
 
+   
+
+    }
+
+    if(data.listener == "itemselected")
+    {
+
+        
+        await controller(data);
+        console.log(data);
+        var datawa = await get_and_set_value(data);
+        console.log(datawa);
+        await  createitems(datawa);
+
     }
 
 
 }
-headCr(Addressmekar("Local","LIN","name","Pavan","delfu",36859569,969588,"pavanrohmail.com","pavan3",96856));
+

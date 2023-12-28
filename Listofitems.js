@@ -19,6 +19,16 @@ async function ItemslistCR(ITlist,ISlist)
    for (let r = 0; r < Categorylist.length; r++) {
       var listdiv  =  await elementCreator("div"+r, "div", 1, true, "slider0","support");
       var newlist =  await elementCreator(Categorylist[r], "ul", 1, false, "div"+r,"ITList");
+      newlist.addEventListener('click', function (event) {
+
+        
+       
+ 
+             var closestLi = event.target.closest('li');
+             window.location.href = "seleteditemspage.html"+"?"+"itemsid="+closestLi.id;
+             
+       
+     });
       var liftbutton = await elementCreator("liftbutton", "button", 1, false, "div"+r,"liftbutton");
       var rightbutton = await elementCreator("rightbutton", "button", 1, false, "div"+r,"rightbutton");
       liftbutton.innerText = "<";
@@ -43,6 +53,7 @@ async function ItemslistCR(ITlist,ISlist)
                        
                        
                          var newli =  await elementCreator(element.Items_id, "li", 1, false, Categorylist[r],"lilist");
+
                          var imagestag =  await elementCreator("imagestag", "img", 1, false, element.Items_id,"imglist");
                          imagestag.src = element.Images[0];
                          var H1 = await elementCreator("heading", "h1", 1, false, element.Items_id,"h1list");

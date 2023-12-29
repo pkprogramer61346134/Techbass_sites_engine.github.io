@@ -3,10 +3,10 @@ async function createitems(value)
    
     await elementCreator("detailbox", "div", 1, true,"","detailboxcs");
     var imagebox =    await elementCreator("imagbox", "img", 1, false,"detailbox","imgboxcs");
-   
+    var  snambox = await elementCreator("snampdev","div",1,false,"detailbox","snampdiv")
     for (let index = 0; index < value.message[0].message.Product[0].Images.length; index++) {
        
-       var values =  await elementCreator("snamp"+index,"samp",1,false,"detailbox","namp");
+       var values =  await elementCreator("snamp"+index,"samp",1,false,"snampdev","namp");
        
         
     }
@@ -52,7 +52,15 @@ async function createitems(value)
         }
 
         // Update the image source
+        for (let index = 0; index < images.length; index++) {
+          
+            var elemdf = document.getElementById("snamp"+index);
+            elemdf.style.backgroundColor  = "white";
+            
+        }
         imagebox.src = images[currentImageIndex];
+        var elementvalue = document.getElementById("snamp"+currentImageIndex);
+        elementvalue.style.backgroundColor  = "black";
     }
 
     var name =   await elementCreator("Name", "h1", 1, false,"detailbox");

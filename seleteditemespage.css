@@ -31,14 +31,27 @@
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Enhance image shadow */
 }
 
+.snampdiv{
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 445px;
+    height: 20px;
+    width: 100%;
+   
+}
+
 .namp{
 
-   position: absolute;
-   top: 445px;
-   z-index: 12;
-   width: 15px;
+  
+   position: relative;
+   width: 10px;
    height: 10px;
+   margin: 2px;
    background-color: white;
+  transition:  background-color .3s ease-in-out;
+    border: black 1px solid;
    border-radius: 50px;
 
 }

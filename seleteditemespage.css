@@ -24,7 +24,7 @@
 
 .detailboxcs img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    height: 450px; /* Maintain aspect ratio */
     border-radius: 20px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Enhance image shadow */
 }

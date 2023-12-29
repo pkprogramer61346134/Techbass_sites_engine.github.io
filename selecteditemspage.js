@@ -3,7 +3,14 @@ async function createitems(value)
    
     await elementCreator("detailbox", "div", 1, true,"","detailboxcs");
     var imagebox =    await elementCreator("imagbox", "img", 1, false,"detailbox","imgboxcs");
-    console.log(value.message[0].message.Product[0].Images);
+   
+    for (let index = 0; index < value.message[0].message.Product[0].Images.length; index++) {
+       
+       var values =  await elementCreator("snamp"+index,"samp",1,false,"detailbox","namp");
+       
+        
+    }
+    console.log(value.message[0].message.Product[0].Images.length);
     var currentImageIndex = 0;
     var images = value.message[0].message.Product[0].Images;
     imagebox.src =  value.message[0].message.Product[0].Images[0];

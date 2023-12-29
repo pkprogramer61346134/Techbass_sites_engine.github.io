@@ -31,13 +31,13 @@
 }
 
 .detailboxcs h1 {
-    font-size: 25px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
 .detailboxcs p {
     white-space: pre-line;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.6;
     margin-top: 20px; /* Add space between paragraphs */
     color: #333; /* Set text color */

@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+
+
+}
+
+header {
+    height: 50px;
+   
+    border-bottom:black 1px solid;
+   
+
+}
+
+.minimenudev{
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+    
+     height: 49px;
+     width: 60px;
+}
+
+
+.snamcss{
+   
+    background-color: #b2bec3;
+    height: 10%;
+    width: 80%;
+    margin: 3px;
+
+}
+
+.displaynone{
+
+    display: none;
+}
+
+.slaider{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px black solid;
+    position: absolute;
+    border-top: none;
+    height: 92%;
+    animation: salider 2s forwards; 
+   
+    
+}
+.slaider img{
+   position: relative;
+   top:  5%;
+   background-color: white;
+   height: 15%;
+   width: 50%;
+   border-radius: 50%;
+   object-fit: contain;
+   border: black 1px solid;
+   
+}
+
+.slaider hr{
+
+    position: relative;
+    top:  10%;
+    width: 99%;
+   border: 1px black solid;
+
+}
+
+#ProfileName{
+
+     position: relative;
+     top: 6%;
+    border-top: none;
+}
+.slaider a {
+ 
+    display: flex;
+    position: relative;
+    top:  11%;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+    text-decoration: none;
+    border: 1px solid black;
+    width: 99%;
+    height: 4%;
+    border-left: none;
+    border-right: none;
+    align-items: center;
+    justify-content: center;
+}
+.slaider button{
+   position: relative;
+    top: 11%;
+     height: 5%;
+     width: 50%;
+     margin: 5px;
+     font-size: 14px;
+     border-radius: 5px;
+     border: none;
+     background-color: white;
+     font-weight: bold;
+     box-shadow: 0 0 5px #00cec9;
+      
+}
+.slaider button:hover{
+
+    box-shadow: 0 0 5px #32f188;
+}
+.slaider button:active{
+
+    box-shadow: 0 0 5px #2248f5;
+}
+
+@keyframes salider {
+    from {
+        /* Styles at the beginning of the animation */
+        /* For example: */
+        width: 0%;
+        opacity: 0;
+    }
+    to {
+        /* Styles at the end of the animation */
+        /* For example: */
+        width: 40%;
+        opacity: 1;
+    }
+}
+@keyframes saliderrevers {
+    from {
+        /* Styles at the beginning of the animation */
+        /* For example: */
+      
+        width: 40%;
+        opacity: 1;
+    }
+    to {
+        /* Styles at the end of the animation */
+        /* For example: */
+        width: 0%;
+        opacity: 0;
+        display: none;
+    }
+}

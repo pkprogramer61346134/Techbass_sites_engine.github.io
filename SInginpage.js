@@ -125,7 +125,7 @@ function SinginCr() {
          var datarec =  await  get_and_set_value(obj);
          if(datarec[0].message[0].message === "the Account ALL ready exit" || datarec[0].message[0].message === "Account Create Success")
          {
-
+             alert(datarec[0].message[0].message );
             window.location.href = "index.html?Gmail="+Gmail.value+"&Password="+Password.value+"&status=Entery";
          }
 

@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function (){
 function SinginCr() {
     var header = elementCreator("header", "header", true, "PersionID", "headercss");
     var headername = elementCreator("headername", "a", false, header.id, "headername");
@@ -150,4 +151,6 @@ function SinginCr() {
 
 }
 
-SinginCr()
+SinginCr();
+
+});

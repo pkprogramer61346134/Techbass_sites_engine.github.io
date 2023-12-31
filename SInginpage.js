@@ -15,6 +15,7 @@ function SinginCr() {
         if (event.target.value) {
             GetOTPBTN.disabled = true;
             SiginBTN.disabled = false;
+
         } else {
             GetOTPBTN.disabled = false;
         }
@@ -88,7 +89,8 @@ function SinginCr() {
     State.value = "Madhya Pradesh";
     State.disabled = true;
     var SiginBTN = elementCreator("SiginBTN", "button", false, Sigindiv.id);
-    SiginBTN.innerText = "Sigin";
+    SiginBTN.innerText = "Sign in ";
+    SiginBTN.disabled = true;
     SiginBTN.addEventListener('click', async function (event) {
 
 

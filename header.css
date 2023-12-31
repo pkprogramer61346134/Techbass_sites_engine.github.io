@@ -6,11 +6,25 @@
 }
 
 header {
+    position: relative;
     height: 50px;
     display: flex;
     align-items: center;
     border-bottom:black 1px solid;
    
+
+}
+
+header img{
+    position: absolute;
+    right: 30px;
+    height: 35px;
+    width: 35px;
+    object-fit: contain;
+    object-position: center;
+   
+     
+
 
 }
 
@@ -59,7 +73,7 @@ header {
 }
 
 .slaider{
-    
+    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -68,7 +82,7 @@ header {
     border-top: none;
     height: 92%;
     animation: salider 2s forwards; 
-   
+    z-index: 1000;
     
 }
 .slaider img{

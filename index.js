@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function (){
          obj[1].AccountStutas.Stutas = true;
          var value = await get_and_set_value(obj);
          await elementCR(value);
+         await listCR(obj);
    
       }
       else {

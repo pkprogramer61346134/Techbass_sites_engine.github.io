@@ -1,0 +1,62 @@
+.maindivoful{
+  position: relative;
+    margin: 20px;
+    height: 300px;
+  
+   top: 30px;
+    margin: 0;
+    padding: 0;
+
+}
+.ulcss{
+    display: flex;
+    
+    list-style: none;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    height: auto;
+}
+
+.ulcss li{
+
+  
+   display: flex;
+   height: auto;
+   
+   flex-direction: column;
+   align-items: center;
+   margin: 5px;
+   box-shadow: 0 0 5px;
+   border-radius: 5px;
+
+
+}
+
+.ulcss li h1{
+
+    font-weight: bolder;
+    font-size: 16px;   
+
+}
+
+.ulcss li p{
+
+    padding: 0 10px;
+    text-align: center;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to two lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+   
+}
+
+.ulcss li img{
+
+    position: relative;
+    height: 200px;
+    width:  190px;
+    border-radius: 5px;
+    object-fit: contain;
+
+}

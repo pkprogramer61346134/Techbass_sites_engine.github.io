@@ -30,7 +30,8 @@ function elementCR(obj)
     var snam3 =  elementCreator("snam3","samp",false,minimenudev.id,"snamcss");
     var slider = elementCreator("sla","div",true,"","slaider");
     slider.style.animation = 'saliderrevers .5s forwards';
-    
+    var cartimages = elementCreator("imgcart","img",false,header.id,"imagescart");
+    cartimages.src = "cart.png"
    
 
     if(obj[1].AccountStutas.Stutas)

@@ -7,7 +7,8 @@
 
 header {
     height: 50px;
-   
+    display: flex;
+    align-items: center;
     border-bottom:black 1px solid;
    
 
@@ -23,6 +24,23 @@ header {
      width: 60px;
 }
 
+.sreachingbox{
+
+      position: relative;
+      left: 50%;
+      border: none;
+      border-style: none;
+      height:  30px;
+     
+      font-weight: bold;
+      border-bottom: 1px solid black;
+      padding: 0;
+      outline: none;
+
+      
+
+}
+
 
 .snamcss{
    
@@ -32,6 +50,7 @@ header {
     margin: 3px;
 
 }
+
 
 .displaynone{
 

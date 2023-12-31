@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("back-to-school-laptop-accessories-header.webp");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 50px;
+    width: 100%;
+
+
+}
+
+header a {
+
+    font-weight: bold;
+    font-size: 50px;
+    color: aliceblue;
+
+
+}
+
+.Sigindiv {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+     border-radius: 10px;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 400px;
+    box-shadow: 0 0 5px rgb(100, 190, 100);
+
+}
+
+.Sigindiv input{
+
+
+    position: relative;
+    margin: 10px;
+    border: none;
+    border-style: none;
+    height:  30px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0;
+    outline: none;
+
+}
+
+.Sigindiv button{
+
+    position: relative;
+     height: 5%;
+     width: 50%;
+     margin: 5px;
+     left: 25%;
+     font-size: 14px;
+     border-radius: 5px;
+     border: none;
+     background-color: white;
+     font-weight: bold;
+     box-shadow: 0 0 5px #00cec9;
+}
+
+.Sigindiv button:hover{
+
+    box-shadow: 0 0 5px #32f188;
+}
+.Sigindiv button:active{
+
+    box-shadow: 0 0 5px #2248f5;
+}

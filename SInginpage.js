@@ -88,7 +88,7 @@ function SinginCr() {
     State.disabled = true;
     var SiginBTN = elementCreator("SiginBTN", "button", false, Sigindiv.id);
     SiginBTN.innerText = "Sigin";
-    SiginBTN.addEventListener('click', function (event) {
+    SiginBTN.addEventListener('click', async function (event) {
 
 
         const value1 = Gmail.value;
@@ -118,16 +118,29 @@ function SinginCr() {
                     "password":value2,
                     "OTP": value8,
                 },
-                { "AccountStutas": { "Stutas": false } }
+                { "AccountStutas": { "Stutas": true } }
             ];
 
-            console.log(obj);
-           
-            get_and_set_value(obj);
+          
+         var datarec =  await  get_and_set_value(obj);
+         if(datarec[0].message[0].message === "the Account ALL ready exit" || datarec[0].message[0].message === "Account Create Success")
+         {
+
+            window.location.href = "index.html?Gmail="+Gmail.value+"&Password="+Password.value+"&status=Entery";
+         }
+
+         if(datarec[0].message[0].message === "the otp not match" )
+         {
+            alert("The OTP is Wrong");
+            SiginBTN.disabled = false;
+
+         }
+       
            
 
         } else {
             SiginBTN.disabled = false;
+            alert("fill the all box");
           
         }
 

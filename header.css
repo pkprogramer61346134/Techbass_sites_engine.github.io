@@ -45,9 +45,10 @@ header {
 .snamcss{
    
     background-color: #b2bec3;
-    height: 10%;
+    height: 8%;
     width: 80%;
     margin: 3px;
+    border-radius: 10px;
 
 }
 

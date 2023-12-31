@@ -1,4 +1,4 @@
-var url = "https://script.google.com/macros/s/AKfycbxVtHd35rYxMO86-Td5uYMYXs-hRjeedtbJrawmCXFY3xsUi7hAbeOjAcxSNrJKyg2d/exec";
+var url = "https://script.google.com/macros/s/AKfycbyB9oHN29f6RyFc5w0mY8g2E8wHxsM0CT4W5YSZsARQSVCb6hVsd1VcJJITk26U_NUj/exec";
 
 
 async function get_and_set_value(obj) {

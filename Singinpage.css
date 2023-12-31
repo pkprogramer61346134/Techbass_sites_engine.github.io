@@ -1,7 +1,7 @@
 *{
 
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 body {
     
@@ -27,7 +27,7 @@ header {
 header a {
 
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
     color: aliceblue;
 
 
@@ -55,7 +55,7 @@ header a {
     margin: 10px;
     border: none;
     border-style: none;
-    height:  30px;
+    height:  30%;
     font-weight: bold;
     border-radius: 5px;
     padding: 0;

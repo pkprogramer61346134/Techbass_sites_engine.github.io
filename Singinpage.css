@@ -1,6 +1,10 @@
-body {
+*{
+
     margin: 0;
     padding: 0;
+}
+body {
+    
     background-image: url("https://ik.imagekit.io/9z8pcdvp6/back-to-school-laptop-accessories-header.webp?updatedAt=1704023806161");
     background-attachment: fixed;
     background-position: center;
@@ -39,7 +43,7 @@ header a {
     left: 50%;
     transform: translate(-50%, -50%);
     height: 600px;
-    width: 400px;
+    width: 350px;
     box-shadow: 0 0 5px rgb(100, 190, 100);
 
 }

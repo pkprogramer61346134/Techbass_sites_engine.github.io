@@ -5,9 +5,6 @@
    top: 30px;
     margin: 0;
     padding: 10px;
-
-   
-
 }
 .ulcss{
     display: flex;
@@ -15,7 +12,6 @@
     scroll-behavior: smooth;
     height: auto;
     overflow-x: auto;
-   
     -webkit-overflow-scrolling: touch;
 }
 
@@ -29,38 +25,29 @@
    margin: 5px;
    box-shadow: 0 0 5px;
    border-radius: 5px;
-
-
 }
 
 .ulcss li h1{
 
     font-weight: bolder;
     font-size: 15px;   
-
 }
 
 .ulcss li p{
-
     padding: 0 10px;
     text-align: center;
-   
     line-height: 1.5;
     display: -webkit-box;
     -webkit-line-clamp: 2; /* Limit to two lines */
     -webkit-box-orient: vertical;
     overflow: hidden;
-    font-size: 14px;
-   
+    font-size: 14px;   
 }
 
 .ulcss li img{
-
     position: relative;
     height: 150px;
     width:  150px;
     border-radius: 10px;
     object-fit: contain;
-   
-
 }

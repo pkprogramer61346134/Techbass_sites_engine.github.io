@@ -35,7 +35,7 @@
 .ulcss li h1{
 
     font-weight: bolder;
-    font-size: 16px;   
+    font-size: 15px;   
 
 }
 
@@ -48,6 +48,7 @@
     -webkit-line-clamp: 2; /* Limit to two lines */
     -webkit-box-orient: vertical;
     overflow: hidden;
+    font-size: 14px;
    
 }
 

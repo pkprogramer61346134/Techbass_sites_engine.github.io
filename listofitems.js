@@ -23,6 +23,15 @@ async function listCR(obj) {
              if(category === Cate[index])
              {
                   var li  = elementCreator(prod.Items_id,"li",false,Mainul.id);
+                  li.addEventListener('click', async function(event) {
+
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const Entery = await urlParams.get('status');
+                    const Gmail = await urlParams.get('Gmail');
+                    const Password = await urlParams.get('Password');
+                  
+                    window.location.href = "seleteditesm.html?Gmail="+Gmail+"&Password="+Password+"&status="+Entery+"&Items_id="+prod.Items_id;
+                  })
                   var img = elementCreator("images","img",false,li.id);
                   img.src = prod.Images[0];
                   var h1 = elementCreator("Name","h1",false,li.id);

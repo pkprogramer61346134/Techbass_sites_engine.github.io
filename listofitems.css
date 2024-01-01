@@ -16,8 +16,6 @@
 }
 
 .ulcss li{
-
-  
    display: flex;
    height: auto;
    flex-direction: column;
@@ -28,7 +26,6 @@
 }
 
 .ulcss li h1{
-
     font-weight: bolder;
     font-size: 15px;   
 }

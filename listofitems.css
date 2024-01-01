@@ -9,7 +9,7 @@ body {
 .maindivoful {
     position: relative;
     margin: 20px;
-    height: 300px;
+    height: auto;
     top: 30px;
     padding: 10px;
 }
@@ -22,6 +22,29 @@ body {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
+
+.rtbox{
+
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    list-style: none;
+    scroll-behavior: smooth;
+    height: auto;
+    
+
+}
+
+.rtbox li{
+
+    width: 150px;
+    margin: 20px;
+}
+
+
 
 .ulcss li {
     display: flex;

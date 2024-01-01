@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function (){
    
          var value = await get_and_set_value(obj);
          await elementCR(value);
+         await listCR(value);
    
    
       }

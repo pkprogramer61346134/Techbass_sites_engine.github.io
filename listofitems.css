@@ -1,12 +1,20 @@
-.maindivoful{
-  position: relative;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa; /* Light background color */
+    color: #333; /* Dark gray text color */
+    margin: 0;
+    padding: 0;
+}
+
+.maindivoful {
+    position: relative;
     margin: 20px;
     height: 300px;
-   top: 30px;
-    margin: 0;
+    top: 30px;
     padding: 10px;
 }
-.ulcss{
+
+.ulcss {
     display: flex;
     list-style: none;
     scroll-behavior: smooth;
@@ -15,22 +23,30 @@
     -webkit-overflow-scrolling: touch;
 }
 
-.ulcss li{
-   display: flex;
-   height: auto;
-   flex-direction: column;
-   align-items: center;
-   margin: 5px;
-   box-shadow: 0 0 5px;
-   border-radius: 5px;
+.ulcss li {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff; /* White background color */
+    transition: transform 0.3s ease-in-out;
 }
 
-.ulcss li h1{
+.ulcss li:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.ulcss li h1 {
     font-weight: bolder;
-    font-size: 15px;   
+    font-size: 18px;
+    color: #000; /* Black color for heading */
+    margin-bottom: 5px;
 }
 
-.ulcss li p{
+.ulcss li p {
     padding: 0 10px;
     text-align: center;
     line-height: 1.5;
@@ -38,13 +54,35 @@
     -webkit-line-clamp: 2; /* Limit to two lines */
     -webkit-box-orient: vertical;
     overflow: hidden;
-    font-size: 14px;   
+    font-size: 14px;
+    color: #555; /* Dark gray text color */
 }
 
-.ulcss li img{
+.ulcss li img {
     position: relative;
     height: 150px;
-    width:  150px;
+    width: 150px;
     border-radius: 10px;
     object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ulcss li img:hover {
+    transform: scale(1.1); /* Scale effect on image hover */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .maindivoful {
+        margin: 10px;
+        top: 10px;
+    }
+
+    .ulcss li h1 {
+        font-size: 16px;
+    }
+
+    .ulcss li p {
+        font-size: 12px;
+    }
 }

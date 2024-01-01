@@ -35,7 +35,7 @@ async function createCr()
      h1.textContent = prod[0].Name;
      var p = elementCreator("detail","p",false,maindiv.id);
      p.textContent = prod[0].detail;
-     var h1 = elementCreator("price","h1",false,maindiv.id);
+     var h1 = elementCreator("price","h1",false,maindiv.id,"prices");
      h1.textContent = prod[0].price;
      var buttonsdiv = elementCreator("buttonsdiv","div",true,"","buttonsdiv");
      var Buynow = elementCreator("Buynow","button",false,buttonsdiv.id,);

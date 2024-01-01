@@ -1,16 +1,14 @@
-*{
-
+* {
     margin: 0;
     padding: 10px;
 }
+
 body {
-    
     background-image: url("https://ik.imagekit.io/9z8pcdvp6/back-to-school-laptop-accessories-header.webp?updatedAt=1704023806161");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 header {
@@ -20,69 +18,62 @@ header {
     position: relative;
     height: 50px;
     width: 100%;
-
-
 }
 
 header a {
-
     font-weight: bold;
     font-size: 30px;
     color: aliceblue;
-
-
 }
 
 .Sigindiv {
     position: absolute;
     display: flex;
     justify-content: center;
-     border-radius: 10px;
+    border-radius: 10px;
     flex-direction: column;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 600px;
-    width: 350px;
-    box-shadow: 0 0 5px rgb(100, 190, 100);
-
+    height: 700px; /* Adjusted height */
+    width: 300px; /* Adjusted width */
+    background-color: #fdfdfd; /* Light gray background color */
+    box-shadow: 0 0 10px rgba(100, 190, 100, 0.5); /* Soft box-shadow effect */
 }
 
-.Sigindiv input{
-
-
+.Sigindiv input {
     position: relative;
     margin: 10px;
     border: none;
     border-style: none;
-    height:  30%;
+    height: 40px; /* Adjusted height */
     font-weight: bold;
     border-radius: 5px;
-    padding: 0;
+    padding: 10px; /* Adjusted padding */
     outline: none;
-
+    background-color: #f0f0f0; /* Lighter gray background color */
 }
 
-.Sigindiv button{
-
+.Sigindiv button {
     position: relative;
-     height: 5%;
-     width: 50%;
-     margin: 5px;
-     left: 25%;
-     font-size: 14px;
-     border-radius: 5px;
-     border: none;
-     background-color: white;
-     font-weight: bold;
-     box-shadow: 0 0 5px #00cec9;
+    height: 40px; /* Adjusted height */
+    width: 60%; /* Adjusted width */
+    margin: 10px;
+    font-size: 16px; /* Adjusted font size */
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    font-weight: bold;
+    left: 20%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Subtle box-shadow effect */
 }
 
-.Sigindiv button:hover{
-
-    box-shadow: 0 0 5px #32f188;
+.Sigindiv button:hover {
+    background-color: #45a049; /* Darker green on hover */
 }
-.Sigindiv button:active{
 
-    box-shadow: 0 0 5px #2248f5;
+.Sigindiv button:active {
+    background-color: #357e3a; /* Even darker green on click */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4); /* Slightly stronger box-shadow on click */
 }

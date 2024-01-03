@@ -8,9 +8,13 @@
 header {
     position: relative;
     height: 50px;
+    padding: 10px;
+    margin: 0px 10px;
+   
     display: flex;
     align-items: center;
     border-bottom:black 1px solid;
+    
    
 
 }

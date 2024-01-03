@@ -16,6 +16,7 @@ body {
 
 .ulcss {
     display: flex;
+ 
     list-style: none;
     scroll-behavior: smooth;
     height: auto;
@@ -24,6 +25,7 @@ body {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE and Edge */
+ 
 }
 
 .ulcss::-webkit-scrollbar {
@@ -51,6 +53,7 @@ body {
     width: 150px;
     margin: 20px;
 }
+
 
 
 

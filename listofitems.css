@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fafafa; /* Light background color */
+    
     color: #333; /* Dark gray text color */
     margin: 0;
     padding: 0;
@@ -19,9 +19,17 @@ body {
     list-style: none;
     scroll-behavior: smooth;
     height: auto;
+    overflow-y: hidden;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
 }
+
+.ulcss::-webkit-scrollbar {
+    display: none; /* WebKit (Chrome, Safari) */
+}
+
 
 .rtbox{
 

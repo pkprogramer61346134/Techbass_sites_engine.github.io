@@ -43,7 +43,7 @@ async function listCR(obj) {
                   h1.textContent = prod.price;
              
              }
-              console.log(conter);
+             
              if(conter === 4)
              {
                 Mainul.classList.toggle("rtbox",true);
@@ -56,6 +56,15 @@ async function listCR(obj) {
                 conter = 0;
              }
             
+             var listItems = Array.from(Mainul.children);
+
+             listItems.sort(function() {
+               return 0.5 - Math.random();
+             });
+       
+             listItems.forEach(function(item) {
+                Mainul.appendChild(item);
+             });
 
         });
 

@@ -11,6 +11,31 @@
     height: 300px;
     width: 99%;
     object-fit: contain;
+    opacity: 1; /* Set initial opacity to fully visible */
+    transition: opacity 2s; /* Only transition opacity over 2 seconds */
+   
+}
+.maindiv  div{
+    position: absolute;
+  
+     height: 20px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     top: 280px;
+}
+.maindiv  samp{
+  
+    position: relative;
+    border: 1px solid black;
+    margin: 10px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background-color: white;
+   transition:background-color 2s forwards;
+
 }
 
 .maindiv h1 {
@@ -53,6 +78,7 @@
     top: 50px;
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .buttonsdiv button {

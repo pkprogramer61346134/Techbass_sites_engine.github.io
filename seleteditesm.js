@@ -1,5 +1,6 @@
 async function createCr()
 {
+   
     var obj = [
         { "Cammands": "LIN" },
         { "AccountStutas": { "Stutas": false } }
@@ -25,11 +26,77 @@ async function createCr()
      }
 
      
+     
       var prod = value[0].message[0].message.Product;
       console.log(prod);
      var maindiv = elementCreator("maindiv","div",true,"","maindiv");
      var img = elementCreator("images","img",false,maindiv.id);
-     img.src = prod[0].Images[0];
+     var sampdiv = elementCreator("sampdiv","div",false,maindiv.id);
+     img.src =   prod[0].Images[0];
+     prod[0].Images.forEach(function(data,index) {
+
+      var imagescounter = elementCreator("couneer"+index,"samp",false,sampdiv.id);
+     
+         
+      });
+      var getsamp = document.getElementById("couneer0");
+          getsamp.style.backgroundColor = "black";
+
+    
+
+      var currentImageIndex = 0;
+      var images =   prod[0].Images
+
+      // Touch event variables
+      var touchStartX = 0;
+      var touchEndX = 0;
+
+      // Add touchstart and touchend event listeners to the image element
+      img.addEventListener('touchstart', function (e) {
+          touchStartX = e.touches[0].clientX;
+      });
+
+      img.addEventListener('touchend', function (e) {
+          touchEndX = e.changedTouches[0].clientX;
+
+          // Calculate the difference in X coordinates
+          var deltaX = touchEndX - touchStartX;
+
+          // Check if the swipe is left or right
+          if (deltaX > 50) {
+              // Swipe right, show the previous image
+              showImage(-1);
+          } else if (deltaX < -50) {
+              // Swipe left, show the next image
+              showImage(1);
+          }
+      });
+
+      // Function to update the image based on the provided index change
+      function showImage(indexChange) {
+          currentImageIndex += indexChange;
+
+          // Ensure the index stays within bounds
+          if (currentImageIndex < 0) {
+              currentImageIndex = images.length - 1;
+          } else if (currentImageIndex >= images.length) {
+              currentImageIndex = 0;
+          }
+
+          // Update the image source
+         
+          images.forEach(function(data,index) {
+
+                     var gd = document.getElementById("couneer"+index);
+                     gd.style.backgroundColor = "white";
+          });
+          var getsamp = document.getElementById("couneer"+currentImageIndex);
+          getsamp.style.backgroundColor = "black";
+          img.src = images[currentImageIndex];
+      }
+
+
+
      var line =  elementCreator("line","hr",false,maindiv.id,);
      var h1 = elementCreator("Name","h1",false,maindiv.id);
      h1.textContent = prod[0].Name;
@@ -42,6 +109,12 @@ async function createCr()
      Buynow.innerText = "Buy Now";
      var Addcart = elementCreator("Addcart","button",false,buttonsdiv.id,);
      Addcart.innerText = "ADD Cart";
+     var obj2 = [
+      { "Cammands": "LIN" },
+      { "AccountStutas": { "Stutas": false } }
+   ];
+   var value2 = await get_and_set_value(obj2);
+     await listCR(value2);
    
 }
 

@@ -35,7 +35,7 @@ header a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 700px; /* Adjusted height */
+    height: 500px; /* Adjusted height */
     width: 300px; /* Adjusted width */
     background-color: #fdfdfd; /* Light gray background color */
     box-shadow: 0 0 10px rgba(100, 190, 100, 0.5); /* Soft box-shadow effect */
@@ -43,7 +43,7 @@ header a {
 
 .Sigindiv input {
     position: relative;
-    margin: 10px;
+    margin: 5px;
     border: none;
     border-style: none;
     height: 40px; /* Adjusted height */

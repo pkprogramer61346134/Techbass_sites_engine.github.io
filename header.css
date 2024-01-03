@@ -82,6 +82,7 @@ header img{
     align-items: center;
     flex-direction: column;
     border: 1px black solid;
+    border-left: none;
     position: absolute;
     border-top: none;
     height: 92%;

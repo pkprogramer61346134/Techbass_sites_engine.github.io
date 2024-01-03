@@ -48,9 +48,12 @@ async function listCR(obj) {
              {
                 Mainul.classList.toggle("rtbox",true);
                 conter = 0;
-             }else{
+             }
+              
+              if(conter === 5){
 
                 Mainul.classList.toggle("rtbox",false);
+                conter = 0;
              }
             
 
